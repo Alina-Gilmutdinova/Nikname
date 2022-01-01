@@ -7,13 +7,13 @@ test.each([
   ['_Sovaa', false],
   ['Live_', false],
   ['Mamba-', false],
-  ['Line666ln', false],
+  ['Line6666n', false],
   ['Line668ln', true],
   ['Al_-gI', true],
-  ['Al___G', false],
+  ['Al___G', true],
   ['18yes', false],
   ['map12Ron', true],
-  ['Mn---P', false],
+  ['Mn---P', true],
   ['Mem#@cos', false],
 ])(('Проверка метода validateUsername'), (obj, exp) => {
   expect(Validator.validateUsername(obj)).toBe(exp);
